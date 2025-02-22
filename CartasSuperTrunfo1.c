@@ -1,11 +1,13 @@
 #include <stdio.h>
   int main() {
 
-    char estado[1], codigo[3], nomecidade[20];
+    char estado[20];
+    char codigo[20], nomecidade[20];
     float area, pib;
     int pop, turismo;
 
-    char estado2[1], codigo2[3], nomecidade2[20];
+    char estado2[20];
+    char codigo2[20], nomecidade2[20];
     float area2, pib2;
     int pop2, turismo2;
 
@@ -19,7 +21,7 @@
     printf("Digite o nome da cidade: \n");
     scanf("%s", &nomecidade);
     
-    prinft("Digite a população: \n");
+    printf("Digite a população: \n");
     scanf("%d", &pop);
     
     printf("Digite a area da cidade: \n");
@@ -32,11 +34,11 @@
     scanf("%d", &turismo);
 
 
-    printf("Digite as informações da segunda carta\n")
+    printf("Digite as informações da segunda carta\n");
     printf("Digite o Estado: \n");
     scanf("%s", &estado2);
 
-    prinft("Digite o código da cidade: \n");
+    printf("Digite o código da cidade: \n");
     scanf("%s", &codigo2);
 
     printf("Digite o nome da cidade: \n");
@@ -60,7 +62,7 @@
     printf("Nome da Cidade: %s\n", nomecidade);
     printf("População: %d km²\n", pop);
     printf("PIB: %.2f bilhões de reais\n", pib);
-    printf("Número de pontos turísticos: %d", turismo);
+    printf("Número de pontos turísticos: %d\n", turismo);
     printf("\n");
 
     printf("Carta 2:\n");
@@ -69,12 +71,11 @@
     printf("Nome da Cidade: %s\n", nomecidade2);
     printf("População: %d km²\n", pop2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
-    printf("Número de pontos turísticos: %d", turismo2);
+    printf("Número de pontos turísticos: %d\n", turismo2);
     
 
 
 
     return 0;
   }
-
 
