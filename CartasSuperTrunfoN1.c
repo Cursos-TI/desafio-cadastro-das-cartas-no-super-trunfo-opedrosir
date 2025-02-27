@@ -35,6 +35,7 @@
 
     float densidadepop = (float) pop / area;
     float pibPC = pib / (float) pop;
+    float superpoder = (float) pop + area + pib + (float) turismo;
 
     printf("Digite as informações da segunda carta\n");
     printf("Digite o Estado: \n");
@@ -60,6 +61,7 @@
 
     float densidadepop2 = (float) pop2 / area2;
     float pibPC2 = pib2 / (float) pop2;
+    float superpoder2 = (float) pop2 + area2 + pib2 + (float) turismo2;
 
     printf("Carta 1:\n");
     printf("Estado: %s\n", estado);
@@ -70,6 +72,7 @@
     printf("Número de pontos turísticos: %d\n", turismo);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepop);
     printf("PIB per Capita: %.2f reais\n");
+    printf("Super Poder: %f\n", superpoder);
     printf("\n");
 
     printf("Carta 2:\n");
@@ -81,6 +84,7 @@
     printf("Número de pontos turísticos: %d\n", turismo2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepop2);
     printf("PIB per Capita: %.2f reais\n");
+    printf("Super Poder: %f\n", superpoder2);
     
 
 
