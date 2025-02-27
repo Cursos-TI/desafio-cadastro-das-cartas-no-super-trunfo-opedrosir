@@ -11,7 +11,8 @@
     float area2, pib2;
     int pop2, turismo2;
 
-    printf("Digite as informações da primeira carta\n");
+    printf("Digite as informações da primeira carta:\n");
+    printf("\n");
     printf("Digite o Estado: \n");
     scanf("%s", &estado);
     
@@ -32,12 +33,14 @@
     
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &turismo);
+    printf("\n");
 
     float densidadepop = (float) pop / area;
     float pibPC = pib / (float) pop;
-    float superpoder = (float) pop + area + pib + (float) turismo;
+    float superpoder = (float) pop + area + pib + (float) turismo + densidadepop;
 
     printf("Digite as informações da segunda carta\n");
+    printf("\n");
     printf("Digite o Estado: \n");
     scanf("%s", &estado2);
 
@@ -61,8 +64,9 @@
 
     float densidadepop2 = (float) pop2 / area2;
     float pibPC2 = pib2 / (float) pop2;
-    float superpoder2 = (float) pop2 + area2 + pib2 + (float) turismo2;
+    float superpoder2 = (float) pop2 + area2 + pib2 + (float) turismo2 + densidadepop2;
 
+    printf("\n");
     printf("Carta 1:\n");
     printf("Estado: %s\n", estado);
     printf("Código: %s\n", codigo);
@@ -85,10 +89,17 @@
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepop2);
     printf("PIB per Capita: %.2f reais\n");
     printf("Super Poder: %f\n", superpoder2);
+
+    printf("\nComparação de Cartas:\n");
+
+    printf("População: %d\n", pop > pop2);
+    printf("Area: %d\n", area > area2);
+    printf("PIB: %d\n", pib > pib2);
+    printf("Pontos Turisticos: %d\n", turismo > turismo2);
+    printf("Densidade Populacional: %d\n", densidadepop > densidadepop2);
+    printf("PIB per Capita: %d\n", pibPC > pibPC2);
+    printf("Super Poder: %d\n", superpoder > superpoder2);
     
-
-
-
     return 0;
   }
 
