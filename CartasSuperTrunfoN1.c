@@ -14,13 +14,13 @@
     printf("Digite as informações da primeira carta:\n");
     printf("\n");
     printf("Digite o Estado: \n");
-    scanf("%s", &estado);
+    scanf("%s", estado);
     
     printf("Digite o código da cidade: \n");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
     
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &nomecidade);
+    scanf("%s", nomecidade);
     
     printf("Digite a população: \n");
     scanf("%d", &pop);
@@ -36,19 +36,19 @@
     printf("\n");
 
     float densidadepop = (float) pop / area;
-    float pibPC = pib / (float) pop;
+    float pibPC = (pib * 1000000000) / pop;
     float superpoder = (float) pop + area + pib + (float) turismo + densidadepop;
 
     printf("Digite as informações da segunda carta\n");
     printf("\n");
     printf("Digite o Estado: \n");
-    scanf("%s", &estado2);
+    scanf("%s", estado2);
 
     printf("Digite o código da cidade: \n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &nomecidade2);
+    scanf("%s", nomecidade2);
 
     printf("Digite a população: \n");
     scanf("%d", &pop2);
@@ -63,7 +63,7 @@
     scanf("%d", &turismo2);
 
     float densidadepop2 = (float) pop2 / area2;
-    float pibPC2 = pib2 / (float) pop2;
+    float pibPC2 = (pib2 * 100000000) / pop2;
     float superpoder2 = (float) pop2 + area2 + pib2 + (float) turismo2 + densidadepop2;
 
     printf("\n");
@@ -75,7 +75,7 @@
     printf("PIB: %.2f bilhões de reais\n", pib);
     printf("Número de pontos turísticos: %d\n", turismo);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepop);
-    printf("PIB per Capita: %.2f reais\n");
+    printf("PIB per Capita: %.2f reais\n", pibPC);
     printf("Super Poder: %f\n", superpoder);
     printf("\n");
 
@@ -87,7 +87,7 @@
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de pontos turísticos: %d\n", turismo2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadepop2);
-    printf("PIB per Capita: %.2f reais\n");
+    printf("PIB per Capita: %.2f reais\n", pibPC2);
     printf("Super Poder: %f\n", superpoder2);
 
     printf("\nComparação de Cartas:\n");
